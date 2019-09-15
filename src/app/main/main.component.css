@@ -1,0 +1,27 @@
+.btn-red {
+  color:white;
+  background-color:#c50005;
+}
+
+.btn-red:hover {
+ color:white;
+ background-color: rgb(235, 59, 59);
+}
+
+.btn-gray {
+  background-color: lightgray;
+}
+
+.btn-gray:hover {
+  background-color: rgb(236, 231, 231);
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#c50005;
+  text-decoration: none;
+}
