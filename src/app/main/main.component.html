@@ -125,42 +125,55 @@
             </div>
         </div>
 
-        <!-- <div class=row>
-          <div id="container">
-            <div
-              ng2-carouselamos
-              class="slides-wrapper"
-              [items]="reports"
-              [width]="850"
-              [$prev]="prev"
-              [$next]="next"
-              [$item]="item"
-            >
+        <div class="row" style="margin-top: 25px; margin-bottom: 20px">
+            <div class="col-md-12 text-center">
+              <h3>Последние отзывы</h3>
             </div>
-            <ng-template #prev>
-              <img src="assets/images/back.svg" id="left" />
-            </ng-template>
-            <ng-template #next>
-              <img src="assets/images/next.svg" id="right" />
-            </ng-template>
-            <ng-template #item let-item let-i="index">
-              <div class="slide-items">
-                <img src="{{ item.name }}">
-                <span>{{item.title}}</span>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <img src="/assets/images/c4.png" style="max-width: 100%; height: auto;">
+            <a href="#"><h5>Citroen C4 I</h5></a>
+            <p>2007, Санкт-Петербург</p>
+          </div>
+          <div class="col-3">
+              <img src="/assets/images/cayenne.jpg" style="max-width: 100%; height: auto;">
+              <a href="#"><h5>Porsche Cayenne 958</h5></a>
+              <p>2010, Москва</p>
+          </div>
+          <div class="col-3">
+              <img src="/assets/images/nexia.jpg" style="max-width: 100%; height: auto;">
+              <a href="#"><h5>Daewoo Nexia</h5></a>
+              <p>2012, Казань</p>
+          </div>
+          <div class="col-3">
+              <img src="/assets/images/transit.jpg" style="max-width: 100%; height: auto;">
+              <a href="#"><h5>Ford Transit VI</h5></a>
+              <p>2006, Саратов</p>
+          </div>
+
+          <!-- <ngb-carousel *ngIf="latestReports">
+            <ng-template ngbSlide *ngFor="let report of latestReports">
+              <div class="picsum-img-wrapper">
+                <img [src]="report.img" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3 style="text-shadow: 1px 1px 1px black">{{report.title}}</h3>
+                <p style="text-shadow: 1px 1px 1px black">{{report.subtitle}}</p>
               </div>
             </ng-template>
-          </div>
-        </div> -->
+          </ngb-carousel> -->
+        </div>
 
-        <div class="row" style="margin-top: 25px">
+        <div class="row" style="margin-top: 25px; margin-bottom: 20px">
           <div class="col-md-12 text-center">
-            <h4>Отзывы по маркам</h4>
+            <h3>Отзывы по маркам</h3>
           </div>
         </div>
         <div class = "row">
           <div class = "col-3">
            <ul *ngFor=" let make of makelist;  let i=index" style="list-style-type:none">
-             <li *ngIf="i>0 && i<9"><a href="#">{{make}}</a></li>
+             <li *ngIf="i>0 && i<9"><a href="/makes">{{make}}</a></li>
            </ul>
           </div>
           <div class = "col-3">
