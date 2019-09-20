@@ -8,12 +8,13 @@
  background-color: rgb(235, 59, 59);
 }
 
-.btn-gray {
-  background-color: lightgray;
+.btn-white {
+  background-color: white;
+  border-color: #c50005;
 }
 
-.btn-gray:hover {
-  background-color: rgb(236, 231, 231);
+.btn-white:hover {
+  background-color: rgb(243, 243, 243);
 }
 
 a {

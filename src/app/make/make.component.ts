@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MakeComponent implements OnInit {
 
-  modellist: Array<string> = ['', 'Audi', 'BMW', 'Chery', 'Chevrolet', 'Citroen',
-  'Daewoo', 'Datsun', 'Ford', 'Geely', 'Haval', 'Honda', 'Hyundai', 'Infiniti', 'Kia',
-  'Lada', 'Land Rover', 'Lexus', 'Lifan', 'Mazda', 'Mercedes-Benz', 'Mitsubishi',
-  'Nissan', 'Opel', 'Peugeot', 'Porsche', 'Renault', 'Skoda', 'SsangYong', 'Subaru',
-  'Suzuki', 'Toyota', 'Volkswagen', 'Volvo', 'ГАЗ', 'УАЗ']
+  modellist: Array<any> = [
+    {name: '', reports: ''},
+    {name: '80', reports: '12'},
+    {name: '100', reports: '6'},
+    {name: 'A3', reports: '23'},
+    {name: 'A4', reports: '34'},
+    {name: 'A5', reports: '14'},
+    {name: 'A6', reports: '40'},
+    {name: 'A7', reports: '19'},
+    {name: 'A8', reports: '33'},
+    {name: 'Q3', reports: '39'},
+    {name: 'Q5', reports: '28'},
+    {name: 'Q7', reports: '37'},
+  ]
 
   constructor() { }
 
