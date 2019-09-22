@@ -1,1 +1,284 @@
-<p>model works!</p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-12">
+          <p>
+              <a href="#">Отзывы</a> > <a href="/models">Audi</a> > A8
+          </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12" style="padding-bottom: 1em">
+            <h2>Отзывы и поломки Audi A8
+                <span class="btn-group" style="margin-left:0.1em">
+                    <div ngbDropdown class="d-inline-block">
+                        <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em" id="dropdownBasic1" ngbDropdownToggle>Выберите поколение</button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                          <button ngbDropdownItem><a href="/generations">D2 (1994-2002)</a></button>
+                          <button ngbDropdownItem><a href="/generations">D3 (2002-2009)</a></button>
+                          <button ngbDropdownItem><a href="/generations">D4 (2010-2017)</a></button>
+                          <button ngbDropdownItem><a href="/generations">D5 (2018-н.в.)</a></button>
+                        </div>
+                      </div>
+                </span>
+            </h2>
+        </div>
+      </div>
+
+  <!-- <div class="row">
+      <div class="col-3">
+          <div class="card text-center">
+              <div class="card-body" style="padding: 0.2em">
+                <img class="card-img-top" src="../../assets/images/d2.jpg" style="max-width: 100%; height: auto;">
+                <a href="#"><h5 class="card-title">D2 (1994-2002)</h5></a>
+             </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+              <div class="card-body">
+                <img src="../../assets/images/d3.jpg" style="max-width: 100%; height: auto;">
+                <a href="#"><h5>D3 (2002-2009)</h5></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+              <div class="card-body">
+                  <img src="../../assets/images/d4.jpg" style="max-width: 100%; height: auto;">
+                  <a href="#"><h5>D4 (2010-2017)</h5></a>
+              </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card border-danger mb-3 text-center">
+              <div class="card-body">
+                  <img src="../../assets/images/d5.jpg" style="max-width: 100%; height: auto;">
+                  <a href="#"><h5>D5 (2018-н.в.)</h5></a>
+              </div>
+          </div>
+      </div>
+    </div> -->
+
+    <div class="row">
+        <div class="col-md-6">
+          <h4>Последние записи о ремонте Audi A8</h4>
+          <div class="row" style="margin-top: 0.5em; margin-bottom: 0.5em">
+              <button class="btn btn-red" style="margin-right: 5px; margin-left:15px">+ Добавить свою запись</button>
+          </div>
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Автомобиль</th>
+                  <th scope="col">Пробег</th>
+                  <th scope="col">Что делали</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#">Audi A8 D5</a></td>
+                  <td>165 000</td>
+                  <td><a href="#">Замена ступичного подшипника</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Audi A8 D3</a></td>
+                  <td>347 000</td>
+                  <td><a href="#">Замена компрессора кондиционера</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Audi A8 D3</a></td>
+                  <td>72 000</td>
+                  <td><a href="#">Замена сайлентблоков задней балки</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Audi A8 D4</a></td>
+                  <td>220 000</td>
+                  <td><a href="#">Замена вариатора в сборе</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Audi A8 D2</a></td>
+                  <td>123 000</td>
+                  <td><a href="#">Ремонт пневмобаллонов</a></td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+            <h4>Топ-5 поломок Audi A8 D3</h4>
+            <div class="row" style="margin-top: 0.5em; margin-bottom: 0.5em">
+                <button class="btn btn-red" style="margin-right: 5px; margin-left:15px">Всё про эту машину</button>
+                <button class="btn btn-white"><span style="color: #c50005">Другой случайный Топ-5</span></button>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Что делали</th>
+                    <th scope="col">Пробег</th>
+                    <th scope="col">Записей</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><a href="#">Ремонт привода крыши</a> </td>
+                    <td>165 000</td>
+                    <td>119</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><a href="#">Ремонт генератора</a> </td>
+                    <td>103 000</td>
+                    <td>89</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td><a href="#">Замена блока розжига фары</a> </td>
+                    <td>72 000</td>
+                    <td>54</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td><a href="#">Замена накладки гидротрансформатора АКП</a> </td>
+                    <td>122 000</td>
+                    <td>41</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><a href="#">Замена крышки расширительного бачка</a> </td>
+                    <td>53 000</td>
+                    <td>39</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+      </div>
+    </div>
+
+
+      <div class="row" style="background-color: rgb(243, 243, 243); max-width: 100%;">
+        <div class="container">
+          <div class="row" style="margin-top: 20px; margin-bottom: 15px">
+              <div class="col-md-12 text-center">
+                 <h3>Топ плюсов и минусов Audi A8 D2</h3>
+              </div>
+          </div>
+          <div class="row" style="margin-bottom: 10px">
+              <div class="col-md-1"></div>
+              <div class="col-md-5" style="background-color: white; margin-left: 5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
+                  <table class="table table-borderless table-sm table-hover">
+                      <tbody>
+                          <tr>
+                            <td scope="row"><a href="#">Динамика разгона</a></td>
+                            <td align="right"><img src="../../assets/images/thumbs-up-24.png">243</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Плавность хода</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-up-24.png">199</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Управляемость</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-up-24.png">167</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Шумоизоляция</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-up-24.png">132</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Мультимедийная система</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-up-24.png">110</td>
+                          </tr>
+
+                      </tbody>
+                  </table>
+              </div>
+              <div class="col-md-5" style="background-color: white; margin-left: 5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
+                  <table class="table table-borderless table-sm table-hover">
+                      <tbody>
+                          <tr>
+                            <td scope="row"><a href="#">Мотор ест масло</a></td>
+                            <td align="right"><img src="../../assets/images/thumbs-down-24.png">211</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Пластик в салоне быстро царапается</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-down-24.png">182</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Кожа на сидениях трескается</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-down-24.png">159</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Подвеска гремит</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-down-24.png">127</td>
+                          </tr>
+                          <tr>
+                              <td scope="row"><a href="#">Маленький дорожный просвет</a></td>
+                              <td align="right"><img src="../../assets/images/thumbs-down-24.png">98</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="col-md-1"></div>
+          </div>
+          <div class="row" style="margin-bottom: 20px">
+              <div class="col-12 text-center">
+                  <button class="btn btn-white"><span style="color: #c50005; margin:5px">Всё про эту машину</span></button>
+                  <button class="btn btn-red" style="margin:5px">+ Оценить свою машину</button>
+                  <button class="btn btn-white"><span style="color: #c50005; margin:5px">Другой случайный Топ</span></button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+<div class="container">
+    <div class="row" style="margin-top: 2em; margin-bottom: 1.5em">
+      <div class="col-md-12 text-center">
+        <h3>Последние отзывы</h3>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 2em">
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/d21.jpg" style="max-width: 100%; height: auto;">
+              <a href="/reports"><h5>Audi A8 D2</h5></a>
+              <p>2002, Москва</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/d31.jpg" style="max-width: 100%; height: auto;">
+              <a href="/reports"><h5>Audi A8 D3</h5></a>
+              <p>2008, Красноярск</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/d32.jpg" style="max-width: 100%; height: auto;">
+              <a href="/reports"><h5>Audi A8 D3</h5></a>
+              <p>2006, Санкт-Петербург</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/a8d54.png" style="max-width: 100%; height: auto;">
+              <a href="/reports"><h5>Audi A8 D5</h5></a>
+              <p>2018, Москва</p>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="row" style="margin-bottom: 2em">
+    <div class="col-12 text-center">
+        <button class="btn btn-white"><span style="color: #c50005; margin:5px">Показать ещё</span></button>
+    </div>
+  </div>
+</div>
+

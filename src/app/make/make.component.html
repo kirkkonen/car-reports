@@ -1,40 +1,49 @@
 <div class="container">
+  <div class="row">
+      <div class="col-12">
+        <p>
+          <a href="#">Отзывы</a> > Audi
+        </p>
+      </div>
+  </div>
 
   <div class="row">
-    <div class="col-12 text-center">
-        <h1><strong>Отзывы и поломки Audi</strong></h1>
+    <div class="col-12">
+        <h2>Отзывы и поломки Audi
+          <span class="btn-group" style="margin-left: 0.1em">
+              <div ngbDropdown class="d-inline-block">
+                  <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em" id="dropdownBasic1" ngbDropdownToggle>Выберите модель</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                    <button ngbDropdownItem>A1</button>
+                    <button ngbDropdownItem>A2</button>
+                    <button ngbDropdownItem>A3</button>
+                    <button ngbDropdownItem>A4</button>
+                    <button ngbDropdownItem>A5</button>
+                    <button ngbDropdownItem>A6</button>
+                    <button ngbDropdownItem>A7</button>
+                    <button ngbDropdownItem>A8</button>
+                    <button ngbDropdownItem>Q3</button>
+                    <button ngbDropdownItem>Q5</button>
+                    <button ngbDropdownItem>Q7</button>
+                    <button ngbDropdownItem>TT</button>
+                  </div>
+                </div>
+          </span>
+        </h2>
     </div>
   </div>
 
-  <div class="row">
-      <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <br />
-          <div class="input-group">
-              <input type="text" class="form-control" placeholder="Искать поломку или модель...">
-              <span class="input-group-btn">
-                <button class="btn btn-red" type="button">
-                    <img src="/assets/images/search.png" style="padding-bottom:2px">
-                </button>
-              </span>
-            </div>
-            <br />
-        </div>
-     <div class="col-md-2"></div>
-  </div>
-
-
-  <div class="row" style="margin-top: 25px">
+  <div class="row" style="margin-top: 1em">
     <div class="col-md-6">
-      <h4>Последние записи о ремонте</h4>
-      <div class="row" style="margin-top: 10px; margin-bottom: 10px">
-          <button class="btn btn-red" style="margin-right: 5px; margin-left:15px">+ Добавить отзыв</button>
+      <h4>Последние записи о ремонте Audi</h4>
+      <div class="row" style="margin-top: 0.5em; margin-bottom: 0.5em">
+          <button class="btn btn-red" style="margin-right: 5px; margin-left:15px">+ Добавить свою запись</button>
       </div>
       <table class="table table-hover">
           <thead>
             <tr>
               <th scope="col">Автомобиль</th>
-              <th scope="col">Текущий пробег</th>
+              <th scope="col">Пробег</th>
               <th scope="col">Что делали</th>
             </tr>
           </thead>
@@ -68,8 +77,8 @@
       </table>
     </div>
     <div class="col-md-6">
-        <h4>Топ-5 ремонтов Audi A4 B8</h4>
-        <div class="row" style="margin-top: 10px; margin-bottom: 10px">
+        <h4>Топ-5 поломок Audi A6 С5</h4>
+        <div class="row" style="margin-top: 0.5em; margin-bottom: 0.5em">
             <button class="btn btn-red" style="margin-right: 5px; margin-left:15px">Всё про эту машину</button>
             <button class="btn btn-white"><span style="color: #c50005">Другой случайный Топ-5</span></button>
         </div>
@@ -78,8 +87,8 @@
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Что делали</th>
-                <th scope="col">Средний пробег</th>
-                <th scope="col">Сколько записей</th>
+                <th scope="col">Пробег</th>
+                <th scope="col">Записей</th>
               </tr>
             </thead>
             <tbody>
@@ -120,11 +129,11 @@
 </div>
 
 
-  <div class="row" style="background-color: rgb(243, 243, 243)">
+  <div class="row" style="background-color: rgb(243, 243, 243); max-width: 100%;">
     <div class="container">
       <div class="row" style="margin-top: 20px; margin-bottom: 15px">
           <div class="col-md-12 text-center">
-             <h3>Топ оценок Audi A4 B6</h3>
+             <h3>Топ плюсов и минусов Audi A4 B6</h3>
           </div>
       </div>
       <div class="row" style="margin-bottom: 10px">
@@ -186,8 +195,9 @@
       </div>
       <div class="row" style="margin-bottom: 20px">
           <div class="col-12 text-center">
-              <button class="btn btn-red" style="margin-right: 5px; margin-left:15px">+ Оценить свою машину</button>
-              <button class="btn btn-white"><span style="color: #c50005">Другой случайный Топ</span></button>
+              <button class="btn btn-white"><span style="color: #c50005; margin:5px">Всё про эту машину</span></button>
+              <button class="btn btn-red" style="margin:5px">+ Оценить свою машину</button>
+              <button class="btn btn-white"><span style="color: #c50005; margin:5px">Другой случайный Топ</span></button>
           </div>
       </div>
     </div>
@@ -228,33 +238,57 @@
          </button>
        </div>
     </div>
-
+</div>
+<div class="row" style="background-color: rgb(243, 243, 243); max-width: 100%; margin-top: 2em;">
+  <div class="container">
     <div class="row" style="margin-top: 25px; margin-bottom: 20px">
       <div class="col-md-12 text-center">
         <h3>Последние отзывы</h3>
       </div>
     </div>
-    <div class="row">
-    <div class="col-3">
-      <img src="../../assets/images/audia3.png" style="max-width: 100%; height: auto;">
-      <a href="#"><h5>Audi A3</h5></a>
-      <p>2007, Санкт-Петербург</p>
+    <div class="row" style="margin-bottom: 2em">
+        <div class="col-3">
+            <div class="card text-center">
+                <div class="card-body" style="padding: 0.2em">
+                  <img src="../../assets/images/audia3.png" style="max-width: 100%; height: auto;">
+                  <a href="/reports"><h5>Audi A3 8P</h5></a>
+                  <p>2007, Санкт-Петербург</p>
+               </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card text-center">
+                <div class="card-body" style="padding: 0.2em">
+                  <img src="../../assets/images/audia6c6.png" style="max-width: 100%; height: auto;">
+                  <a href="/reports"><h5>Audi A6 C6</h5></a>
+                  <p>2010, Москва</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card text-center">
+                <div class="card-body" style="padding: 0.2em">
+                    <img src="../../assets/images/audiq3.jpg" style="max-width: 100%; height: auto;">
+                    <a href="/reports"><h5>Audi Q3 8U</h5></a>
+                    <p>2012, Казань</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card text-center">
+                <div class="card-body" style="padding: 0.2em">
+                    <img src="../../assets/images/audi100.jpg" style="max-width: 100%; height: auto;">
+                    <a href="/reports"><h5>Audi 100 C4</h5></a>
+                    <p>2006, Саратов</p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 2em">
+        <div class="col-12 text-center">
+            <button class="btn btn-white"><span style="color: #c50005; margin:5px">Показать ещё</span></button>
+        </div>
+      </div>
     </div>
-    <div class="col-3">
-        <img src="../../assets/images/audia6c6.png" style="max-width: 100%; height: auto;">
-        <a href="#"><h5>Audi A6 C6</h5></a>
-        <p>2010, Москва</p>
-    </div>
-    <div class="col-3">
-        <img src="../../assets/images/audiq3.jpg" style="max-width: 100%; height: auto;">
-        <a href="#"><h5>Audi Q3</h5></a>
-        <p>2012, Казань</p>
-    </div>
-    <div class="col-3">
-        <img src="../../assets/images/audi100.jpg" style="max-width: 100%; height: auto;">
-        <a href="#"><h5>Audi 100 C4</h5></a>
-        <p>2006, Саратов</p>
-    </div>
-  </div>
 </div>
 

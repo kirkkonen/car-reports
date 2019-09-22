@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DropdownModule } from 'ng2-dropdown';
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -12,6 +14,7 @@ import { GenerationComponent } from './generation/generation.component';
 import { ReportComponent } from './report/report.component';
 import { MakeComponent } from './make/make.component';
 import { ModelComponent } from './model/model.component';
+import { AddreportComponent } from './addreport/addreport.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +26,13 @@ import { ModelComponent } from './model/model.component';
     ReportComponent,
     MakeComponent,
     ModelComponent,
+    AddreportComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    DropdownModule
   ],
 
   providers: [],

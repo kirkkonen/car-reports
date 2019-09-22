@@ -1,1 +1,280 @@
-<p>report works!</p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-12">
+          <p>
+              <a href="#">Отзывы</a> > <a href="/makes">Audi</a> > <a href="/models">A8</a> > <a href="/generations">D5</a> > Отзыв владельца Audi A8 D5 2019, Москва
+          </p>
+        </div>
+    </div>
+
+  <div class="row">
+    <div class="col-12" style="padding-bottom: 1em">
+        <h2>Audi A8 D5 2019: отзыв владельца</h2>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 0em; margin-bottom: 2em">
+    <div class="col-5">
+        <ngb-carousel *ngIf="latestReports">
+            <ng-template ngbSlide *ngFor="let report of latestReports">
+              <div class="picsum-img-wrapper">
+                <img [src]="report.img" alt="Random first slide" style="max-width: 100%; height: auto;">
+              </div>
+              <!-- <div class="carousel-caption">
+                <h3 style="text-shadow: 1px 1px 1px black">{{report.title}}</h3>
+                <p style="text-shadow: 1px 1px 1px black">{{report.subtitle}}</p>
+              </div> -->
+            </ng-template>
+        </ngb-carousel>
+    </div>
+    <div class="col-6">
+        <table class="table table-hover table-sm">
+            <tbody>
+              <tr>
+                <th>Двигатель</th>
+                <td>3.0 TDI, дизельный, 249 л.с.</td>
+              </tr>
+              <tr>
+                <th>Коробка передач</th>
+                <td>8АТ</td>
+              </tr>
+              <tr>
+                <th>Привод</th>
+                <td>Полный</td>
+              </tr>
+              <tr>
+                <th>Комплектация</th>
+                <td>Business</td>
+              </tr>
+              <tr>
+                <th>Год выпуска</th>
+                <td>2019</td>
+              </tr>
+              <tr>
+                <th>Покупка машины</th>
+                <td>Март 2019</td>
+              </tr>
+              <tr>
+                <th>Цена покупки</th>
+                <td>7 060 000 рублей</td>
+              </tr>
+              <tr>
+                <th>Записей о ремонте</th>
+                <td>17</td>
+              </tr>
+              <tr>
+                <th>Продажа машины</th>
+                <td>Пока езжу</td>
+              </tr>
+              <tr>
+                <th>Последнее обновление</th>
+                <td>22 сентября 2019 г.</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-12">
+          <h3>Комментарий владельца</h3>
+          <p>
+              Оценивая представительский седан, не стоит ограничиваться точкой зрения покупателя. Флагман А8 демонстрирует будущее по версии Audi. Это витрина технических достижений, манифест. Автомобиль XXI века должен быть полностью автономным, полноуправляемым, с активной подвеской и кучей другой автоматики. Тут свыше сорока электронных блоков обработки данных. А где же место для владельца?
+              Сразу ясно одно ― напрягаться ему не положено. Отпереть машину и завести мотор можно без брелока, пользуясь NFC-меткой в смартфоне. Чуть потянешь наружную или внутреннюю ручку, и замок открывается электромеханикой. Никаких усилий! Главное ― не дёргать по старой привычке сильно: при большом ходе ручки срабатывает обычный механический привод, и его наложение на работу электропривода рождает ощущение заедания. Бонус ― с помощью радара мёртвых зон электроника может «придержать» электрооткрытие водительской двери на 0,8 секунды, если сзади приближается пешеход или велосипедист.
+          </p>
+      </div>
+  </div>
+
+
+  <div class="row" style="margin-top: 25px">
+    <div class="col-md-12">
+        <h4>Что ломалось в машине</h4>
+        <p>
+         Сортировка:
+            <span class="btn-group">
+              <button class="btn btn-red btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left: 0.5em">
+                По количеству записей
+              </button>
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em">
+                По пробегу
+              </button>
+            </span>
+        </p>
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Что делали</th>
+                <th scope="col">Средний пробег</th>
+                <th scope="col">Сколько записей</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><a href="#">Ремонт привода крыши</a> </td>
+                <td>165 000</td>
+                <td>119</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="#">Ремонт генератора</a> </td>
+                <td>103 000</td>
+                <td>89</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><a href="#">Замена блока розжига фары</a> </td>
+                <td>72 000</td>
+                <td>54</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><a href="#">Замена накладки гидротрансформатора АКП</a> </td>
+                <td>122 000</td>
+                <td>41</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><a href="#">Замена крышки расширительного бачка</a> </td>
+                <td>53 000</td>
+                <td>39</td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+  </div>
+  <div class="row" style="margin-bottom: 20px">
+    <div class="col-12 text-center">
+        <button class="btn btn-white"><span style="color: #c50005; margin:5px">Показать ещё 10</span></button>
+        <button class="btn btn-red" style="margin:5px">+ Добавить свои поломки</button>
+    </div>
+</div>
+</div>
+
+
+  <div class="row" style="background-color: rgb(243, 243, 243); max-width: 100%;">
+    <div class="container">
+      <div class="row" style="margin-top: 20px; margin-bottom: 15px">
+          <div class="col-md-12 text-center">
+             <h3>Плюсы и минусы: мнение владельца</h3>
+          </div>
+      </div>
+      <div class="row" style="margin-bottom: 10px">
+          <div class="col-md-1"></div>
+          <div class="col-md-5" style="background-color: white; margin-left: 5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
+              <table class="table table-borderless table-sm table-hover">
+                  <tbody>
+                      <tr>
+                        <td scope="row"><a href="#">Динамика разгона</a></td>
+                        <td align="right"><img src="../../assets/images/thumbs-up-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Плавность хода</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-up-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Управляемость</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-up-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Шумоизоляция</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-up-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Мультимедийная система</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-up-24.png"></td>
+                      </tr>
+
+                  </tbody>
+              </table>
+          </div>
+          <div class="col-md-5" style="background-color: white; margin-left: 5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
+              <table class="table table-borderless table-sm table-hover">
+                  <tbody>
+                      <tr>
+                        <td scope="row"><a href="#">Мотор ест масло</a></td>
+                        <td align="right"><img src="../../assets/images/thumbs-down-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Пластик в салоне быстро царапается</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-down-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Кожа на сидениях трескается</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-down-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Подвеска гремит</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-down-24.png"></td>
+                      </tr>
+                      <tr>
+                          <td scope="row"><a href="#">Маленький дорожный просвет</a></td>
+                          <td align="right"><img src="../../assets/images/thumbs-down-24.png"></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div class="col-md-1"></div>
+      </div>
+      <div class="row" style="margin-bottom: 20px">
+          <div class="col-12 text-center">
+              <button class="btn btn-white"><span style="color: #c50005; margin:5px">Показать ещё 10</span></button>
+              <button class="btn btn-red" style="margin:5px">+ Оценить свою машину</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+    <div class="row" style="margin-top: 2em; margin-bottom: 1.5em">
+      <div class="col-md-12 text-center">
+        <h3>Другие отзывы Audi A8 D5</h3>
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 2em">
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/a8d51.jpg" style="max-width: 100%; height: auto;">
+              <a href="#"><h5>Audi A8 D5</h5></a>
+              <p>2019, Москва</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/a8d52.jpg" style="max-width: 100%; height: auto;">
+              <a href="#"><h5>Audi A8 D5</h5></a>
+              <p>2018, Красноярск</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/a8d53.jpg" style="max-width: 100%; height: auto;">
+              <a href="#"><h5>Audi A8 D5</h5></a>
+              <p>2019, Санкт-Петербург</p>
+            </div>
+          </div>
+      </div>
+      <div class="col-3">
+          <div class="card text-center">
+            <div class="card-body" style="padding: 0.2em">
+              <img src="../../assets/images/a8d54.png" style="max-width: 100%; height: auto;">
+              <a href="#"><h5>Audi A8 D5</h5></a>
+              <p>2018, Москва</p>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="row" style="margin-bottom: 2em">
+    <div class="col-12 text-center">
+        <button class="btn btn-white"><span style="color: #c50005; margin:5px">Показать ещё</span></button>
+    </div>
+  </div>
+</div>
+
+

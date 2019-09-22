@@ -27,7 +27,16 @@ a:hover {
   text-decoration: none;
 }
 
-h1
-.btn-group {
-  display: inline-block;
+.card-body {
+  padding: 0.3em;
+  border: 0em
 }
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+

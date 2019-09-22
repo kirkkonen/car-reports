@@ -26,3 +26,8 @@ a:hover {
   color:#c50005;
   text-decoration: none;
 }
+
+h1
+.btn-group {
+  display: inline-block;
+}
