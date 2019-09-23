@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-12">
-        <p><ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>2 из 4</i></ngb-progressbar></p>
+        <p><ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>75%</i></ngb-progressbar></p>
     </div>
   </div>
   <div class="row" style="margin-top: 2em; margin-bottom: 1em">
@@ -163,19 +163,166 @@
           <h3>Что ломалось</h3>
       </div>
   </div>
-  <div class="row" style="margin-top: 2em; margin-bottom: 1em">
+  <div class="row" style="margin-top: 1em; margin-bottom: 1em">
+      <div class="col-md-6">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Начните печатать название поломки...">
+            <span class="input-group-btn">
+              <button class="btn btn-red" type="button">
+                  <img src="/assets/images/search.png" style="padding-bottom:2px">
+              </button>
+            </span>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+        <h6>...или выберите поломку по категориям:</h6>
+      </div>
+  </div>
+  <div class="row" style="margin-top: 1em; margin-bottom: 1em">
       <div class="col-12">
-        <br />
+        <span class="btn-group">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-white btn-sm" style="margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em" id="dropdownBasic1" ngbDropdownToggle>С чем была проблема?</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Двигатель</button>
+                <button ngbDropdownItem>Трансмиссия</button>
+                <button ngbDropdownItem>Кузов</button>
+                <button ngbDropdownItem>Салон</button>
+                <button ngbDropdownItem>Ходовая часть</button>
+                <button ngbDropdownItem>Электрика</button>
+                <button ngbDropdownItem>Прочее</button>
+            </div>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-white btn-sm" style="margin: 0.5em" id="dropdownBasic1" ngbDropdownToggle>А если точнее?</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem><a href="/generations">Топливная система</a></button>
+              <button ngbDropdownItem><a href="/generations">Впуск</a></button>
+              <button ngbDropdownItem><a href="/generations">Выпуск</a></button>
+              <button ngbDropdownItem><a href="/generations">Цилиндро-поршневая группа</a></button>
+              <button ngbDropdownItem><a href="/generations">Головка блока</a></button>
+              <button ngbDropdownItem><a href="/generations">ГРМ</a></button>
+            </div>
+          </div>
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-white btn-sm" style="margin: 0.5em" id="dropdownBasic1" ngbDropdownToggle>Сама поломка</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem><a href="/generations">Закоксовались кольца</a></button>
+              <button ngbDropdownItem><a href="/generations">Задир цилиндра</a></button>
+              <button ngbDropdownItem><a href="/generations">Естественный износ цилиндра</a></button>
+              <button ngbDropdownItem><a href="/generations">Заклинило поршень</a></button>
+              <button ngbDropdownItem><a href="/generations">Провернуло вкладыш</a></button>
+            </div>
+          </div>
+        </span>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+        <form>
+            <div class="form-row">
+              <div class="col-6">
+                  <input type="text" class="form-control form-control-sm" placeholder="Пробег, км" style="margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Цена деталей" style="margin: 0.5em">
+              </div>
+              <div class="col-3">
+                <input type="text" class="form-control form-control-sm" placeholder="Цена работ" style="margin: 0.5em">
+              </div>
+            </div>
+          </form>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 1em; margin-bottom: 2em">
+      <div class="col-6">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlFile1">Фотографии:</label>
+              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Краткий комментарий о поломке:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+      </div>
+  </div>
+  <div class="row" style="margin-top: 1em; margin-bottom: 2em">
+      <div class="col-12">
+        <button class="btn btn-red">Добавить поломку</button>
       </div>
   </div>
   <div class="row" style="margin-top: 2em; margin-bottom: 1em">
       <div class="col-12">
-          <h3>Плюсы и минусы</h3>
+          <h3>Плюсы</h3>
+      </div>
+  </div>
+  <div class="row" style="margin-top: 1em; margin-bottom: 1em">
+      <div class="col-md-10">
+          <form>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Ходовые качества</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Вводите плюсы через запятую, например 'Хорошая управляемость'">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Салон</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Например 'Большой багажник'">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Надёжность</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Например 'Дешёвые ТО'">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Прочее</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Например, 'Агрессивная внешность'">
+                </div>
+              </div>
+          </form>
       </div>
   </div>
   <div class="row" style="margin-top: 2em; margin-bottom: 1em">
       <div class="col-12">
-          <br />
+          <h3>Минусы</h3>
+      </div>
+  </div>
+  <div class="row" style="margin-top: 1em; margin-bottom: 1em">
+      <div class="col-md-10">
+          <form>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Ходовые качества</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Вводите плюсы через запятую, например 'Плохие тормоза'">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Салон</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Например 'Неудобные кресла'">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Надёжность</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Например 'Двигатель ест масло'">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Прочее</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Например, 'Часто угоняют'">
+                </div>
+              </div>
+          </form>
       </div>
   </div>
   <div class="row" style="margin-top: 2em; margin-bottom: 1em">
@@ -191,19 +338,12 @@
               <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Краткий комментарий о машине:</label>
+              <label for="exampleFormControlTextarea1">Краткий комментарий о машине в целом:</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
           </form>
       </div>
   </div>
-  <div class="row" style="margin-top: 1em; margin-bottom: 2em">
-      <div class="col-6">
-      </div>
-  </div>
-
-
-
   <div class="row" style="margin-top: 1em; margin-bottom: 2em">
       <div class="col-12">
         <button class="btn btn-red">Готово!</button>

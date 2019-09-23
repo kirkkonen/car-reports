@@ -56,6 +56,10 @@
                 <td>Март 2019</td>
               </tr>
               <tr>
+                <th>Где покупали</th>
+                <td>Новой в салоне</td>
+              </tr>
+              <tr>
                 <th>Цена покупки</th>
                 <td>7 060 000 рублей</td>
               </tr>
@@ -85,60 +89,102 @@
       </div>
   </div>
 
+  <div class="row" style="margin-top: 2em; margin-bottom:1em">
+    <div class="col-md-6">
+        <h4>Что ломалось:</h4>
+    </div>
+  </div>
 
-  <div class="row" style="margin-top: 25px">
-    <div class="col-md-12">
-        <h4>Что ломалось в машине</h4>
+  <div class="row">
+      <div class="col-md-5">
         <p>
-         Сортировка:
+         Сортировать:
             <span class="btn-group">
-              <button class="btn btn-red btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left: 0.5em">
+              <button class="btn btn-red btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left:0.5em;">
                 По количеству записей
               </button>
-              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em">
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em;">
                 По пробегу
+              </button>
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-right:0.5em;">
+                По цене
               </button>
             </span>
         </p>
+    </div>
+    <div class="col-7">
+      <p>
+        Фильтровать:
+        <span class="btn-group">
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left:0.2em; margin-right:0.2em" id="dropdownBasic1" ngbDropdownToggle>По категории</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Двигатель</button>
+                <button ngbDropdownItem>Транмиссия</button>
+                <button ngbDropdownItem>Ходовая часть</button>
+                <button ngbDropdownItem>Электрика</button>
+                <button ngbDropdownItem>Кузов</button>
+                <button ngbDropdownItem>Салон</button>
+              </div>
+            </div>
+        </span>
+      </p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
         <table class="table table-hover">
             <thead>
               <tr>
                 <th scope="col">#</th>
+                <th scope="col">Категория поломок</th>
                 <th scope="col">Что делали</th>
-                <th scope="col">Средний пробег</th>
-                <th scope="col">Сколько записей</th>
+                <th scope="col">Пробег</th>
+                <th scope="col">Цена деталей</th>
+                <th scope="col">Цена работ</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
+                <td>Кузов, крыша</td>
                 <td><a href="#">Ремонт привода крыши</a> </td>
                 <td>165 000</td>
-                <td>119</td>
+                <td>23000 рублей</td>
+                <td>17000 рублей</td>
               </tr>
               <tr>
                 <td>2</td>
+                <td>Двигатель, навесное оборудование</td>
                 <td><a href="#">Ремонт генератора</a> </td>
                 <td>103 000</td>
-                <td>89</td>
+                <td>9000 рублей</td>
+                <td>2000 рублей</td>
               </tr>
               <tr>
                 <td>3</td>
+                <td>Электрика, освещение</td>
                 <td><a href="#">Замена блока розжига фары</a> </td>
                 <td>72 000</td>
-                <td>54</td>
+                <td>19000 рублей</td>
+                <td>3500 рублей</td>
               </tr>
               <tr>
                 <td>4</td>
+                <td>Трансмиссия, АКП</td>
                 <td><a href="#">Замена накладки гидротрансформатора АКП</a> </td>
                 <td>122 000</td>
-                <td>41</td>
+                <td>21000 рублей</td>
+                <td>19000 рублей</td>
               </tr>
               <tr>
                 <td>5</td>
+                <td>Двигатель, система охлаждения</td>
                 <td><a href="#">Замена крышки расширительного бачка</a> </td>
                 <td>53 000</td>
-                <td>39</td>
+                <td>900 рублей</td>
+                <td>500 рублей</td>
               </tr>
             </tbody>
         </table>

@@ -17,65 +17,115 @@
 
 
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
         <h4>Что ломается:</h4>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-5">
         <p>
          Сортировать:
             <span class="btn-group">
               <button class="btn btn-red btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left:0.5em;">
                 По количеству записей
               </button>
-              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-right: 0.5em">
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em;">
                 По пробегу
               </button>
-              <div ngbDropdown class="d-inline-block">
-                <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left:1em; margin-right:1em" id="dropdownBasic1" ngbDropdownToggle>Фильтровать по мотору</button>
-                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                  <button ngbDropdownItem>3.0 TDI (249 л.с.) 8AT 4x4</button>
-                  <button ngbDropdownItem>3.0 TFSI (340 л.с.) 8AT 4x4</button>
-                  <button ngbDropdownItem>4.0 TFSI (460 л.с.) 8AT 4x4</button>
-                </div>
-              </div>
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-right:0.5em;">
+                По цене
+              </button>
             </span>
         </p>
+    </div>
+    <div class="col-7">
+      <p>
+        Фильтровать:
+        <span class="btn-group">
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left:0.2em; margin-right:0.2em" id="dropdownBasic1" ngbDropdownToggle>По модификации</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>3.0 TDI (249 л.с.) 8AT 4x4</button>
+                <button ngbDropdownItem>3.0 TFSI (340 л.с.) 8AT 4x4</button>
+                <button ngbDropdownItem>4.0 TFSI (460 л.с.) 8AT 4x4</button>
+              </div>
+            </div>
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left:0.2em; margin-right:0.2em" id="dropdownBasic1" ngbDropdownToggle>По категории</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Двигатель</button>
+                <button ngbDropdownItem>Транмиссия</button>
+                <button ngbDropdownItem>Ходовая часть</button>
+                <button ngbDropdownItem>Электрика</button>
+                <button ngbDropdownItem>Кузов</button>
+                <button ngbDropdownItem>Салон</button>
+              </div>
+            </div>
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+  <div class="row">
+      <div class="col-md-12">
         <table class="table table-hover">
             <thead>
               <tr>
                 <th scope="col">#</th>
+                <th scope="col">Модификация</th>
+                <th scope="col">Категория</th>
                 <th scope="col">Что делали</th>
                 <th scope="col">Средний пробег</th>
+                <th scope="col">Средняя цена</th>
                 <th scope="col">Сколько записей</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1</td>
+                <td>3.0 TDI (249 л.с.) 8AT 4x4</td>
+                <td>Кузов, крыша</td>
                 <td><a href="#">Ремонт привода крыши</a> </td>
                 <td>165 000</td>
+                <td>43000</td>
                 <td>119</td>
               </tr>
               <tr>
                 <td>2</td>
+                <td>3.0 TDI (249 л.с.) 8AT 4x4</td>
+                <td>Двигатель, навесное оборудование</td>
                 <td><a href="#">Ремонт генератора</a> </td>
                 <td>103 000</td>
+                <td>19000</td>
                 <td>89</td>
               </tr>
               <tr>
                 <td>3</td>
+                <td>3.0 TDI (249 л.с.) 8AT 4x4</td>
+                <td>Электрика, освещение</td>
                 <td><a href="#">Замена блока розжига фары</a> </td>
                 <td>72 000</td>
+                <td>34000</td>
                 <td>54</td>
               </tr>
               <tr>
                 <td>4</td>
+                <td>3.0 TDI (249 л.с.) 8AT 4x4</td>
+                <td>Трансмиссия, АКП</td>
                 <td><a href="#">Замена накладки гидротрансформатора АКП</a> </td>
                 <td>122 000</td>
+                <td>47000</td>
                 <td>41</td>
               </tr>
               <tr>
                 <td>5</td>
+                <td>3.0 TDI (249 л.с.) 8AT 4x4</td>
+                <td>Двигатель, система охлаждения</td>
                 <td><a href="#">Замена крышки расширительного бачка</a> </td>
                 <td>53 000</td>
+                <td>1700</td>
                 <td>39</td>
               </tr>
             </tbody>
