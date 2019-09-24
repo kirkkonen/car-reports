@@ -7,6 +7,7 @@ import { ReportComponent } from './report/report.component';
 import { MakeComponent } from './make/make.component';
 import { ModelComponent } from './model/model.component';
 import { AddreportComponent } from './addreport/addreport.component';
+import { RepairComponent } from './repair/repair.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'generations', component: GenerationComponent },
   { path: 'reports', component: ReportComponent },
   { path: 'addreport', component: AddreportComponent },
+  { path: 'repairs', component: RepairComponent },
   { path: '**', component: MainComponent }
 ];
 

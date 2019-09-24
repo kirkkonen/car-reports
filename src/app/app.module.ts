@@ -15,6 +15,7 @@ import { ReportComponent } from './report/report.component';
 import { MakeComponent } from './make/make.component';
 import { ModelComponent } from './model/model.component';
 import { AddreportComponent } from './addreport/addreport.component';
+import { RepairComponent } from './repair/repair.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AddreportComponent } from './addreport/addreport.component';
     MakeComponent,
     ModelComponent,
     AddreportComponent,
+    RepairComponent,
   ],
   imports: [
     BrowserModule,
