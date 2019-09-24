@@ -136,63 +136,100 @@
              <h3>Топ плюсов и минусов Audi A4 B6</h3>
           </div>
       </div>
-      <div class="row" style="margin-bottom: 10px">
-          <div class="col-md-1"></div>
-          <div class="col-md-5" style="background-color: white; margin-left: 5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
-              <table class="table table-borderless table-sm table-hover">
-                  <tbody>
-                      <tr>
-                        <td scope="row"><a href="#">Динамика разгона</a></td>
-                        <td align="right"><img src="../../assets/images/thumbs-up-24.png">243</td>
-                      </tr>
-                      <tr>
+      <div class="row">
+          <div class="col-12 text-center">
+            <p>
+              Фильтровать:
+              <span class="btn-group">
+                  <div ngbDropdown class="d-inline-block">
+                    <button class="btn btn-white btn-sm" style="margin-bottom: 1em; margin-top: 0.5em; margin-left:0.2em; margin-right:0.2em" id="dropdownBasic1" ngbDropdownToggle>По категории</button>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <button ngbDropdownItem>Ходовые качества</button>
+                      <button ngbDropdownItem>Салон</button>
+                      <button ngbDropdownItem>Надежность</button>
+                      <button ngbDropdownItem>Прочее</button>
+                    </div>
+                  </div>
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 10px">
+          <div class="col-1"></div>
+            <div class="col-5" style="background-color: white; margin-left: 5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
+                <table class="table table-borderless table-sm table-hover">
+                    <tbody>
+                        <tr>
+                          <td scope="row">#1</td>
+                          <td scope="row"><a href="#">Динамика разгона</a></td>
+                          <td scope="row">Ходовые качества</td>
+                          <td align="right"><img src="../../assets/images/thumbs-up-24.png">243</td>
+                        </tr>
+                        <tr>
+                          <td scope="row">#2</td>
                           <td scope="row"><a href="#">Плавность хода</a></td>
+                          <td scope="row">Ходовые качества</td>
                           <td align="right"><img src="../../assets/images/thumbs-up-24.png">199</td>
-                      </tr>
-                      <tr>
+                        </tr>
+                        <tr>
+                          <td scope="row">#3</td>
                           <td scope="row"><a href="#">Управляемость</a></td>
+                          <td scope="row">Ходовые качества</td>
                           <td align="right"><img src="../../assets/images/thumbs-up-24.png">167</td>
-                      </tr>
-                      <tr>
+                        </tr>
+                        <tr>
+                          <td scope="row">#4</td>
                           <td scope="row"><a href="#">Шумоизоляция</a></td>
+                          <td scope="row">Салон</td>
                           <td align="right"><img src="../../assets/images/thumbs-up-24.png">132</td>
-                      </tr>
-                      <tr>
+                        </tr>
+                        <tr>
+                          <td scope="row">#5</td>
                           <td scope="row"><a href="#">Мультимедийная система</a></td>
+                          <td scope="row">Салон</td>
                           <td align="right"><img src="../../assets/images/thumbs-up-24.png">110</td>
-                      </tr>
-
-                  </tbody>
-              </table>
-          </div>
-          <div class="col-md-5" style="background-color: white; margin-left: 5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
-              <table class="table table-borderless table-sm table-hover">
-                  <tbody>
-                      <tr>
-                        <td scope="row"><a href="#">Мотор ест масло</a></td>
-                        <td align="right"><img src="../../assets/images/thumbs-down-24.png">211</td>
-                      </tr>
-                      <tr>
-                          <td scope="row"><a href="#">Пластик в салоне быстро царапается</a></td>
-                          <td align="right"><img src="../../assets/images/thumbs-down-24.png">182</td>
-                      </tr>
-                      <tr>
-                          <td scope="row"><a href="#">Кожа на сидениях трескается</a></td>
-                          <td align="right"><img src="../../assets/images/thumbs-down-24.png">159</td>
-                      </tr>
-                      <tr>
-                          <td scope="row"><a href="#">Подвеска гремит</a></td>
-                          <td align="right"><img src="../../assets/images/thumbs-down-24.png">127</td>
-                      </tr>
-                      <tr>
-                          <td scope="row"><a href="#">Маленький дорожный просвет</a></td>
-                          <td align="right"><img src="../../assets/images/thumbs-down-24.png">98</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-          <div class="col-md-1"></div>
-      </div>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-5" style="background-color: white; margin-left:5px; margin-right: 5px; margin-bottom: 10px; padding: 10px">
+                <table class="table table-borderless table-sm table-hover">
+                    <tbody>
+                        <tr>
+                          <td scope="row">#1</td>
+                          <td scope="row"><a href="#">Мотор ест масло</a></td>
+                          <td scope="row">Надёжность</td>
+                          <td align="right"><img src="../../assets/images/thumbs-down-24.png">211</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">#2</td>
+                            <td scope="row"><a href="#">Пластик в салоне</a></td>
+                            <td scope="row">Салон</td>
+                            <td align="right"><img src="../../assets/images/thumbs-down-24.png">182</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">#3</td>
+                            <td scope="row"><a href="#">Кожа на сидениях</a></td>
+                            <td scope="row">Салон</td>
+                            <td align="right"><img src="../../assets/images/thumbs-down-24.png">159</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">#4</td>
+                            <td scope="row"><a href="#">Подвеска гремит</a></td>
+                            <td scope="row">Ходовые качества</td>
+                            <td align="right"><img src="../../assets/images/thumbs-down-24.png">127</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">#5</td>
+                            <td scope="row"><a href="#">Дорожный просвет</a></td>
+                            <td scope="row">Ходовые качества</td>
+                            <td align="right"><img src="../../assets/images/thumbs-down-24.png">90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          <div class="col-1"></div>
+        </div>
       <div class="row" style="margin-bottom: 20px">
           <div class="col-12 text-center">
               <button class="btn btn-white"><span style="color: #c50005; margin:5px">Всё про эту машину</span></button>
